@@ -16,4 +16,11 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(any_runner.distance, 100)
 
     def test_challenge(self):
+        homo_erectus = runner_test.Runner("Sapiens")
+        homo_skilled = runner_test.Runner("Chabilis")
+        for i in range(1, 11):
+            homo_erectus.run()
+        for i in range(1, 11):
+            homo_skilled.walk()
+        self.assertNotEqual(homo_erectus.distance, homo_skilled.distance)
 
