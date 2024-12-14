@@ -16,3 +16,4 @@ class RunnerTest(unittest.TestCase):
         self.assertEqual(any_runner.distance, 100)
 
     def test_challenge(self):
+
